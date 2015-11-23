@@ -19,29 +19,29 @@ module.exports = (robot) ->
       res.reply "I'm afraid I can't let you do that."
     else
        res.reply "Opening #{doorType} doors"
-  #
-  # robot.hear /I like pie/i, (res) ->
-  #   res.emote "makes a freshly baked pie"
-  #
-  # lulz = ['lol', 'rofl', 'lmao']
-  #
-  # robot.respond /lulz/i, (res) ->
-  #   res.send res.random lulz
-  #
-  # robot.topic (res) ->
-  #   res.send "#{res.message.text}? That's a Paddlin'"
-  #
-  #
-  # enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
-  # leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
-  #
-  # robot.enter (res) ->
-  #   res.send res.random enterReplies
-  # robot.leave (res) ->
-  #   res.send res.random leaveReplies
-  #
-  # answer = process.env.HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING
-  #
+ 
+   robot.hear /I like pie/i, (res) ->
+     res.emote "makes a freshly baked pie"
+  
+   lulz = ['lol', 'rofl', 'lmao']
+  
+   robot.respond /lulz/i, (res) ->
+     res.send res.random lulz
+  
+   robot.topic (res) ->
+     res.send "#{res.message.text}? That's a Paddlin'"
+  
+  
+   enterReplies = ['Hi', 'Target Acquired', 'Firing', 'Hello friend.', 'Gotcha', 'I see you']
+   leaveReplies = ['Are you still there?', 'Target lost', 'Searching']
+  
+   robot.enter (res) ->
+     res.send res.random enterReplies
+   robot.leave (res) ->
+     res.send res.random leaveReplies
+  
+   answer = process.env.HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING
+  
   # robot.respond /what is the answer to the ultimate question of life/, (res) ->
   #   unless answer?
   #     res.send "Missing HUBOT_ANSWER_TO_THE_ULTIMATE_QUESTION_OF_LIFE_THE_UNIVERSE_AND_EVERYTHING in environment: please set and try again"
